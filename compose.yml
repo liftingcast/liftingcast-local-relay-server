@@ -1,0 +1,15 @@
+services:
+  liftingcast-database:
+    image: liftingcast/database:latest
+    restart: on-failure
+    hostname: liftingcast-database
+    ports:
+      - "5984:5984"
+  liftingcast-web:
+    image: liftingcast/web:latest
+    restart: on-failure
+    hostname: liftingcast-web
+    ports:
+      - "80:80"
+    depends_on:
+      - liftingcast-database
