@@ -37,6 +37,10 @@ wsl
 
 If you are using Windows with WSL for best performance make sure you are in a linux directory such as `/home/YOUR_USER`. Don't use the Windows mounted directors that start with `/mnt`.
 
+```
+cd ~
+```
+
 ![screenshot](images/how-to-cd-linux-home.png)
 
 ### Download docker-compose config file
@@ -123,3 +127,7 @@ If you change your password in the online cloud database you will need to delete
 ### Removing old meets
 
 You can delete meets from the local LiftingCast server from the local LiftingCast homepage. You can also delete the Docker container and start a new one.
+
+## Example 2 Platform Setup
+
+![screenshot](images/liftingcast-setup.png)
