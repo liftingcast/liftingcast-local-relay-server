@@ -1,13 +1,13 @@
 services:
   liftingcast-database:
     image: liftingcast/database:latest
-    restart: on-failure
+    restart: always
     hostname: liftingcast-database
     ports:
       - "5984:5984"
   liftingcast-web:
     image: liftingcast/web:latest
-    restart: on-failure
+    restart: always
     hostname: liftingcast-web
     ports:
       - "80:80"
