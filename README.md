@@ -131,3 +131,16 @@ You can delete meets from the local LiftingCast server from the local LiftingCas
 ## Example 2 Platform Setup
 
 ![screenshot](images/liftingcast-setup.png)
+
+
+## Advanced Setup - multiple relays
+
+Two relay servers are recommended for redundancy when the meet size is sufficiently large and/or the resources are available.
+The relay servers can be configured to sync with each other directly _and_ the cloud.  
+1. Configure each relay server to sync against the cloud
+2. On each relay server click `Create New Sync` and chose the `CREATE NEW` option
+3. Enter `http://LOCAL.IP.OTHER.RELAY:5984`
+4. Then enter your Meet Id and Meet password as normal
+5. Repeat on the opposite server
+
+It is important to add `:5984` as that is the port for couchdb on the relay servers.
